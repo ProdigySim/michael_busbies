@@ -1,0 +1,49 @@
+$separator-color: rgb(199, 199, 199);
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+    box-sizing:border-box;
+}
+
+
+main {
+    display: grid;
+    margin: 0 auto;
+    padding: 4px 16px;
+}
+h1,h2,h3,h4,p {
+    margin-block-end: 0px;
+    margin-block-start: 8px;
+}
+hr {
+    height: 2px;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+ul.emoji-bulleted {
+
+    padding-left: 24px;
+    > li {
+        list-style: none;
+    } 
+}
+@media screen {
+    body {
+        background-color: rgb(131, 64, 131);
+        color: white;
+    }
+    main {
+        max-width: 960px;
+        margin: 24px auto;
+        display:grid;
+        border: 2px dashed $separator-color;
+        background-color: rgb(177, 101, 177);
+        padding: 4px 16px;
+    }
+
+    hr {
+        color: $separator-color;
+    }
+}
