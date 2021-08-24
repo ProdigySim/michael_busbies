@@ -9,7 +9,7 @@ const debug = process.env.NODE_ENV !== 'production'
 module.exports = withPlugins([optimizedImages, {
   optimizeImagesInDev: true,
 }], {
-  assetPrefix: !debug ? '/michael_busbies/' : '',
+  assetPrefix: !debug ? '/' : '',
   images: {
     disableStaticImages: true,
   },

@@ -1,4 +1,4 @@
-$separator-color: rgb(199, 199, 199);
+$separator-color: #bdbddb;
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -31,15 +31,15 @@ ul.emoji-bulleted {
 }
 @media screen {
     body {
-        background-color: rgb(131, 64, 131);
-        color: white;
+        background-color: #ebebf4;
+        color: #0d0d73;
     }
     main {
         max-width: 960px;
         margin: 24px auto;
         display:grid;
         border: 2px dashed $separator-color;
-        background-color: rgb(177, 101, 177);
+        background-color: #ebebf4;
         padding: 4px 16px;
     }
 
