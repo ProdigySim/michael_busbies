@@ -29,6 +29,21 @@ ul.emoji-bulleted {
         list-style: none;
     } 
 }
+
+a {
+    color: rgb(173, 30, 173);
+    font-weight: 600;
+    
+    &:not(:hover) {
+        text-decoration: none;
+    }
+
+}
+
+em {
+    font-weight: 600;
+}
+
 @media screen {
     body {
         background-color: #ebebf4;
