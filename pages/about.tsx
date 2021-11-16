@@ -1,7 +1,11 @@
-import Link from 'next/link'
+import Head from 'next/head';
+
 export default function About() {
   return (
     <main className='about'>
+      <Head>
+        <title> Michael Busby | About</title>
+      </Head>
       <h2>About Michael</h2>
       <div>
         <p><em>I'm a software developer</em>. I write code. I don't have a great story about what kind of developer I am.

@@ -1,10 +1,13 @@
+import Head from 'next/head';
 
 // css
 import styles from './resume.module.scss';
-
 export default function Resume() {
   return (
     <main className="resume">
+      <Head>
+        <title>Michael Busby | Rseume</title>
+      </Head>
       <h1>Michael Busby</h1>
       <p> I'm a full-stack Software Developer, with a focus on front-end systems.
         I've been working fully remote since 2018, after moving from Seattle to Kansas City.
