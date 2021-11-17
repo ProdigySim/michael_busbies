@@ -8,13 +8,13 @@ export const TopNav = () => {
     <div className={styles.topNavContainer}>
       <h1>Michael of the Busbies</h1>
       <div className={styles.topNav}>
-        <Link href="/" as={process.env.BACKEND_URL + '/'}>
+        <Link href="/">
           <a>Blog</a>
         </Link>
-        <Link href="/resume" as={process.env.BACKEND_URL + '/'}>
+        <Link href="/resume">
           <a>Resume/CV</a>
         </Link>
-        <Link href="/about" as={process.env.BACKEND_URL + '/'}>
+        <Link href="/about">
           <a>About</a>
         </Link>
       </div>
