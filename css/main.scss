@@ -1,64 +1,73 @@
 $separator-color: #bdbddb;
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 * {
-    box-sizing:border-box;
+  box-sizing: border-box;
 }
-
 
 main {
-    display: grid;
-    margin: 0 auto;
-    padding: 4px 16px;
+  display: grid;
+  margin: 0 auto;
+  padding: 4px 16px;
 }
-h1,h2,h3,h4,p {
-    margin-block-end: 0px;
-    margin-block-start: 8px;
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-block-end: 0px;
+  margin-block-start: 8px;
 }
 hr {
-    height: 2px;
-    width: 100%;
-    margin-top: 16px;
-    margin-bottom: 8px;
+  height: 2px;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 8px;
 }
 ul.emoji-bulleted {
-
-    padding-left: 24px;
-    > li {
-        list-style: none;
-    } 
+  padding-left: 24px;
+  > li {
+    list-style: none;
+  }
 }
 
 a {
-    color: rgb(173, 30, 173);
-    font-weight: 600;
-    
-    &:not(:hover) {
-        text-decoration: none;
-    }
+  color: rgb(173, 30, 173);
+  font-weight: 600;
 
+  &:not(:hover) {
+    text-decoration: none;
+  }
 }
 
 em {
-    font-weight: 600;
+  font-weight: 600;
+}
+
+.content-block {
+  border: 2px dashed $separator-color;
+  background-color: #ebebf4;
+  padding: 4px 16px;
+}
+
+article {
+  margin: 24px 0;
+  padding-bottom: 24px !important;
 }
 
 @media screen {
-    body {
-        background-color: #ebebf4;
-        color: #0d0d73;
-    }
-    main {
-        max-width: 960px;
-        margin: 24px auto;
-        display:grid;
-        border: 2px dashed $separator-color;
-        background-color: #ebebf4;
-        padding: 4px 16px;
-    }
+  body {
+    background-color: #ebebf4;
+    color: #0d0d73;
+  }
+  main {
+    max-width: 960px;
+    margin: 24px auto;
+    display: grid;
+  }
 
-    hr {
-        color: $separator-color;
-    }
+  hr {
+    color: $separator-color;
+  }
 }

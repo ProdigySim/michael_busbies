@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function About() {
   return (
-    <main className='about'>
+    <main className='about content-block'>
       <Head>
         <title> Michael Busby | About</title>
       </Head>

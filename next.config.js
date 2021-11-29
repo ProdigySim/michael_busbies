@@ -3,12 +3,13 @@
 // (But you could use ES2015 features supported by your Node.js version)
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
+const nextMdx = require('@next/mdx');
 
 const debug = process.env.NODE_ENV !== 'production'
 
 module.exports = withPlugins([optimizedImages, {
   optimizeImagesInDev: true,
-}], {
+}, nextMdx], {
   assetPrefix: !debug ? '/' : '',
   images: {
     disableStaticImages: true,

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import styles from './resume.module.scss';
 export default function Resume() {
   return (
-    <main className="resume">
+    <main className="resume content-block">
       <Head>
         <title>Michael Busby | Rseume</title>
       </Head>
